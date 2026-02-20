@@ -1,0 +1,336 @@
+* {
+  box-sizing: border-box;
+}
+
+.global-nav-bar {
+  height: 4.375rem;
+  border-bottom: 0.0625rem solid #dfdfdf;
+  background: #fff;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+  display: flex;
+
+  /* 상단 네비게이션 바 최상단 고정 */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+.gnb-container {
+  display: flex;
+  max-width: 120rem;
+  width: 100%;
+  padding: 0.5625rem 12.5rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.pm-logo {
+  width: 9.5625rem;
+  height: 3.1875rem;
+
+  cursor: pointer;
+}
+
+.pm-login-btn {
+  display: flex;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  background: var(--Primary-100, #3692ff);
+
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  /* 창 축소시에도 크기 고정 */
+  flex-shrink: 0;
+
+  /* 로그인 글씨 설정 */
+  color: var(--Cool-Gray-100, #f3f4f6);
+
+  /* pretendard/lg-16px-semibold */
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.625rem; /* 162.5% */
+  text-decoration: none; /* a 태그 밑줄 제거 */
+
+  cursor: pointer;
+}
+
+.pm-home-hero {
+  display: flex;
+  height: 33.75rem;
+
+  background: #cfe5ff;
+
+  justify-content: center;
+  align-items: end;
+}
+
+.pm-home-hero-container {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.4375rem;
+
+  flex-shrink: 0;
+}
+
+.pm-home-hero-detail {
+  display: flex;
+  padding-bottom: 3.75rem;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  gap: 2rem;
+}
+
+.hero-title {
+  color: var(--Secondary-700, #374151);
+  font-family: Pretendard;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 56px */
+
+  /* 피그마와 브라우저 간 폰트 차이를 줄이기 위함 */
+  /* letter-spacing: -0.1062rem; */
+}
+
+.pm-items-btn {
+  display: flex;
+  height: 3.5rem;
+  padding: 1rem 7.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+
+  border: none;
+  border-radius: 2.5rem;
+  background: var(--brand-blue, #3692ff);
+
+  color: var(--Secondary-50, #f9fafb);
+  text-align: center;
+  /* pretendard/xl-20px-semibold */
+  font-family: Pretendard;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 2rem; /* 160% */
+
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.pm-home-hero-img {
+  display: flex;
+  width: 46.625rem;
+  height: 21.25rem;
+  padding-right: 0;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  /* 선택 적용 */
+  display: block;
+  object-fit: contain;
+}
+
+.pm-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.pm-section-1 {
+  padding: 8.625rem 21.5rem;
+}
+
+.pm-section-2 {
+  padding: 8.625rem 21.375rem;
+}
+
+.pm-section-3 {
+  padding: 8.625rem 22.5rem;
+}
+
+.pm-section-div {
+  display: flex;
+  width: 61.75rem;
+
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+
+  background: #fcfcfc;
+  border-radius: 0.75rem;
+}
+
+.section-keyword {
+  color: var(--Primary-100, #3692ff);
+
+  /* pretendard/2lg-18px-bold */
+  font-family: Pretendard;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.625rem; /* 144.444% */
+}
+
+.section-img {
+  width: 36.75rem;
+  height: 27.75rem;
+}
+
+.section-title {
+  letter-spacing: 0.05rem;
+}
+
+.section-para {
+  color: var(--Secondary-700, #374151);
+
+  /* pretendard/2xl-24px-medium */
+  font-family: Pretendard;
+  font-size: 1.5rem;
+
+  font-style: normal;
+  font-weight: 500;
+  line-height: 2rem; /* 133.333% */
+
+  /* 피그마의 폰트 자체 렌더링으로 인하여 
+  피그마와 브라우저 간의 폰트 차이 발생 */
+  letter-spacing: -0.0553rem;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.section-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.pm-section-2 .section-content,
+.pm-section-2 .section-detail {
+  align-items: end;
+  text-align: right;
+}
+
+.pm-section-2 .section-title {
+  width: 19.8125rem;
+}
+
+.pm-home-bottom {
+  display: flex;
+  height: 33.75rem;
+
+  background: #cfe5ff;
+
+  justify-content: center;
+  align-items: end;
+}
+
+.pm-home-bottom-container {
+  display: flex;
+  align-items: center;
+  gap: 4.3125rem;
+  flex-shrink: 0;
+}
+
+.pm-home-bottom-detail {
+  display: flex;
+  padding-bottom: 3.75rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.625rem;
+}
+
+.pm-home-bottom-img {
+  display: flex;
+  width: 46.625rem;
+  height: 24.8125rem;
+  justify-content: center;
+  align-items: center;
+
+  object-fit: contain;
+  overflow: hidden;
+}
+
+.pm-footer {
+  display: flex;
+  height: 10rem;
+  padding: 2rem 12.5rem;
+  flex-direction: column;
+
+  align-items: flex-start;
+  gap: 0.625rem;
+
+  background: var(--Secondary-900, #111827);
+}
+
+.pm-footer-nav {
+  display: flex;
+  max-width: 95rem;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.pm-footer-el {
+  display: flex;
+  align-items: flex-start;
+  flex-shrink: 0;
+
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.pm-footer-center {
+  gap: 1.875rem;
+}
+
+.pm-footer-right {
+  width: 7.25rem;
+  gap: 0.75rem;
+}
+
+.pm-footer-copyright {
+  color: var(--Secondary-400, #9ca3af);
+}
+
+.pm-footer-opt {
+  color: var(--Secondary-200, #e5e7eb);
+  text-decoration: none;
+}
+
+.pm-footer-sns-img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
