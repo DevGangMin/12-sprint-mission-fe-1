@@ -77,6 +77,10 @@ body {
   line-height: 24px; /* 150% */
 }
 
+.login-input:focus {
+  outline: 1px solid #3692ff;
+}
+
 .login-submit {
   display: flex;
   width: 100%;
