@@ -25,11 +25,20 @@
           </div>
           <div class="input-container">
             <p class="input-label">비밀번호</p>
-            <input
-              type="password"
-              class="login-input"
-              placeholder="비밀번호를 입력해주세요"
-            />
+            <div class="input-container pw-input">
+              <input
+                type="password"
+                class="login-input"
+                placeholder="비밀번호를 입력해주세요"
+              />
+              <div class="btn-pw-visible">
+                <img
+                  src="images/btn_visibility_off_24px.svg"
+                  alt="비밀번호 표시"
+                  class="ic-visibility-off"
+                />
+              </div>
+            </div>
           </div>
           <button type="submit" class="login-submit">로그인</button>
         </form>

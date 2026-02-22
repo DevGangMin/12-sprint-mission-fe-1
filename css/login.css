@@ -166,3 +166,22 @@ body {
   text-underline-offset: auto;
   text-underline-position: from-font; */
 }
+
+.pw-input {
+  position: relative;
+}
+
+.btn-pw-visible {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.ic-visibility-off {
+  width: 24px;
+  height: 24px;
+}
