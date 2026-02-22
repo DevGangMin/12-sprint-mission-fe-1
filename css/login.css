@@ -31,6 +31,8 @@ body {
 .pm-logo {
   width: 396px;
   height: 132px;
+
+  cursor: pointer;
 }
 
 .input-label {
@@ -114,6 +116,7 @@ body {
 .social-login-container {
   display: flex;
   width: 100%;
+  height: 42px;
   justify-content: space-between;
   align-items: center;
 
@@ -129,8 +132,14 @@ body {
 
 .social-login-logo-container {
   display: flex;
+  height: 100%;
   align-items: flex-start;
   gap: 16px;
+}
+
+.social-logo-img {
+  width: 42px;
+  height: 42px;
 }
 
 .signup-notice {
