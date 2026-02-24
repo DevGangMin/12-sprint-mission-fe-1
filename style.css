@@ -1,0 +1,254 @@
+/* --- BASE / RESET --- */
+.sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+:root {
+  --primary-100: #3692FF;
+  --primary-200: #1967D6;
+  --primary-300: #1251AA;
+
+  --secondary-900: #111827; 
+  --secondary-800: #1F2937;
+  --secondary-700: #374151;
+  --secondary-600: #4B5563;
+  --secondary-500: #6B7280; 
+  --secondary-400: #9CA3AF;
+  --secondary-200: #E5E7EB;
+  --secondary-100: #F3F4F6;
+  --white: #FFFFFF;
+
+  --error-red: #F74747;
+
+  --bg-hero: #CFE5FF; 
+  --bg-feature: #FCFCFC;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Pretendard", sans-serif;
+  color: var(--secondary-700);
+  background-color: var(--white);
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+
+/* --- COMPONENTS --- */
+/* Typography */
+.text-2xl-medium {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.text-xl-semibold {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 2rem;
+}
+
+.text-2lg-bold {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.625rem;
+}
+
+.text-lg-semibold {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.625rem
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--secondary-700);
+  word-break: keep-all;
+}
+
+/* Buttons */
+.btn-base {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center; 
+  gap: 0.625rem;
+  white-space: nowrap;
+  color: var(--secondary-100);
+  background-color: var(--primary-100);
+}
+
+.btn-base:hover {
+  background-color: var(--primary-200);
+}
+
+.btn-base:active {
+  background-color: var(--primary-300);
+}
+
+.btn-base:disabled {
+  background-color: var(--secondary-400);
+}
+
+/* --- SECTIONS --- */
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 4.375rem;
+  background-color: var(--white);
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%; 
+  padding: 0 12.5rem;
+}
+
+.btn-login {
+  min-width: 8rem;
+  padding: 0.75rem 1.4375rem;
+  border-radius: 0.5rem;
+}
+
+/* Hero Section */
+.hero {
+  height: 33.75rem;
+  background-color: var(--bg-hero);
+} 
+
+.hero-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.hero-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 69.375rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 3.75rem;
+  word-break: keep-all;
+}
+
+.btn-cta-lg {
+  height: 3.5rem;
+  padding: 1rem 7.75rem; 
+  border-radius: 2.5rem;
+}
+
+.hero-image {
+  display: block;
+  width: 100%;
+  max-width: 46.625rem;
+  min-width: 0;
+  height: auto; 
+}
+
+/* Feature Section */
+.feature {
+  padding: 8.625rem 0;
+  background-color: var(--white);
+}
+
+.feature-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  max-width: 61.75rem;
+  background-color: var(--bg-feature);
+}
+
+.feature--reverse {
+  flex-direction: row-reverse;
+}
+
+.feature--reverse .feature-text {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature-badge {
+  margin-bottom: 0.75rem;
+  color: var(--primary-100);
+}
+
+.feature-title {
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.feature-description {
+  color: var(--secondary-700);
+}
+
+/* Footer */
+.site-footer {
+  height: 10rem;
+  background: var(--secondary-900);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 12.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer-copyright {
+  color: var(--secondary-400);
+}
+
+.footer-menu {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.footer-link {
+  color: var(--secondary-200);
+}
+
+.footer-socials {
+  display: flex;
+  gap: 0.75rem;
+}
