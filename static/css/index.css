@@ -6,7 +6,7 @@
 .visual {
   display: flex;
   align-items: center;
-  width: 1110px;
+  width: min(100%, 1110px);
   margin-inline: auto;
   background-position: right bottom;
   background-repeat: no-repeat;
@@ -26,13 +26,13 @@
   background-color: #cfe5ff;
 }
 #keyVisual .visual {
-  height: 340px;
+  height: 21.25rem;
   background-image: url("../images/key_visual.png");
   background-image: url("../images/key_visual.svg");
 }
 
 .section {
-  padding-block: 138px;
+  padding-block: 8.625rem;
 }
 .banner {
   display: flex;
@@ -90,14 +90,14 @@
   background-image: url("../images/plan_card03.svg");
 }
 #promotion {
-  padding-top: 143px;
+  padding-top: 8.93rem;
   background-color: #cfe5ff;
 }
 #promotion .visual {
-  height: 397px;
+  height: 24.8125rem;
   background-image: url("../images/promotion.png");
   background-image: url("../images/promotion.svg");
 }
 #promotion .headline {
-  margin-bottom: 60px;
+  margin-bottom: 3.75rem;
 }
