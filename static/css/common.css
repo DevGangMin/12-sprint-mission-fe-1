@@ -239,6 +239,14 @@ body {
 /** 
  * form *
 */
+input[type="password"] {
+  background-image: url(../images/ic_blind.png);
+  background-image: url(../images/ic_blind.svg);
+  background-position: right 24px center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
