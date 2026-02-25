@@ -13,31 +13,59 @@
     />
     <link rel="stylesheet" href="/static/css/reset.css" />
     <link rel="stylesheet" href="/static/css/common.css" />
+    <link rel="stylesheet" href="/static/css/form.css" />
   </head>
   <body>
-    <div class="inner-form">
-      <div class="big-logo"></div>
+    <div class="form">
+      <a href="/" class="big-logo"><span class="sr-only">메인이동</span></a>
 
       <form action="" method="post">
-        <fieldset>
+        <h1 class="sr-only">판다마켓 로그인</h1>
+
+        <fieldset class="form__field">
           <div>
-            <label for="member-email">이메일</label>
-            <input type="text" name="email" id="member-email" />
+            <label for="mb_email">이메일</label>
+            <input type="text" name="email" id="mb_email" class="form__input" />
           </div>
           <div>
-            <label for="member-password">비밀번호</label>
-            <input type="text" name="password" id="member-password" />
+            <label for="mb_password">비밀번호</label>
+            <input
+              type="text"
+              name="password"
+              id="mb_password"
+              class="form__input"
+            />
           </div>
         </fieldset>
 
-        <div class="btn-group">
-          <button type="submit">로그인</button>
+        <div class="form__btn-group">
+          <button type="submit" class="form__button--submit">로그인</button>
         </div>
       </form>
 
-      <section id="social-login">
+      <section id="oauth">
         <h2>간편 로그인하기</h2>
+
+        <ul class="oauth__list">
+          <li>
+            <a href="https://google.com" target="_blank" class="badge-google"
+              ><span class="sr-only">구글로그인</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://kakaocorp.com/page/"
+              target="_blank"
+              class="badge-kakao"
+              ><span class="sr-only">카카오로그인</span></a
+            >
+          </li>
+        </ul>
       </section>
+
+      <div id="yetMember">
+        <p>판다마켓이 처음이신가요? <a href="/signup">회원가입</a></p>
+      </div>
     </div>
   </body>
 </html>

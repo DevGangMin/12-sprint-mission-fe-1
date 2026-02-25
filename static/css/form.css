@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+#yetMember {
+  margin-top: 24px;
+  text-align: center;
+}
+
+#yetMember p {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+#yetMember a {
+  color: var(--primary-100);
+  text-decoration: underline;
+}
