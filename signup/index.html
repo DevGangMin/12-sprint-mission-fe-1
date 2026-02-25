@@ -13,6 +13,77 @@
     />
     <link rel="stylesheet" href="/static/css/reset.css" />
     <link rel="stylesheet" href="/static/css/common.css" />
+    <link rel="stylesheet" href="/static/css/form.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="form">
+      <a href="/" class="big-logo"><span class="sr-only">메인이동</span></a>
+
+      <form action="" method="post">
+        <h1 class="sr-only">판다마켓 로그인</h1>
+
+        <fieldset class="form__field">
+          <div>
+            <label for="mb_email">이메일</label>
+            <input type="text" name="email" id="mb_email" class="form__input" />
+          </div>
+          <div>
+            <label for="mb_nickname">닉네임</label>
+            <input
+              type="text"
+              name="nickname"
+              id="mb_nickname"
+              class="form__input"
+            />
+          </div>
+          <div>
+            <label for="mb_password">비밀번호</label>
+            <input
+              type="text"
+              name="password"
+              id="mb_password"
+              class="form__input"
+            />
+          </div>
+          <div>
+            <label for="mb_password_confirm">비밀번호 확인</label>
+            <input
+              type="text"
+              name="password"
+              id="mb_password_confirm"
+              class="form__input"
+            />
+          </div>
+        </fieldset>
+
+        <div class="form__btn-group">
+          <button type="submit" class="form__button--submit">회원가입</button>
+        </div>
+      </form>
+
+      <section id="oauth">
+        <h2>간편 로그인하기</h2>
+
+        <ul class="oauth__list">
+          <li>
+            <a href="https://google.com" target="_blank" class="badge-google"
+              ><span class="sr-only">구글로그인</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://kakaocorp.com/page/"
+              target="_blank"
+              class="badge-kakao"
+              ><span class="sr-only">카카오로그인</span></a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <div id="yetMember">
+        <p>이미 회원이신가요? <a href="/login">로그인</a></p>
+      </div>
+    </div>
+  </body>
 </html>
