@@ -1,150 +1,174 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>판다마켓</title>
-  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
-  <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <h1>
-        <a href="/">
-          <img src="./assets/logo.png" alt="판다마켓"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>판다마켓</title>
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__inner">
+        <h1>
+          <a href="/">
+            <img src="./assets/logo.png" alt="판다마켓" />
+          </a>
+        </h1>
+        <a class="btn-base text-lg-semibold header__login-btn" href="./login">
+          로그인
         </a>
-      </h1>
-      <a class="btn-base btn-login text-lg-semibold" href="./login">
-        로그인
-      </a>
-    </div> 
-  </header>
+      </div>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-wrapper">
-        <div class="hero-inner">
-          <div class="hero-content">
-            <h2 class="section-title">
-              일상의 모든 물건을<br>
-              거래해보세요
-            </h2>
-            <a href="./items.html" class="btn-base btn-cta-lg text-xl-semibold">
-              구경하러 가기
-            </a>
+    <main>
+      <section class="hero">
+        <div class="container hero__wrapper">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h2 class="section-title">
+                일상의 모든 물건을<br />
+                거래해보세요
+              </h2>
+              <a
+                href="./items.html"
+                class="btn-base text-xl-semibold hero__btn-lg"
+              >
+                구경하러 가기
+              </a>
+            </div>
+            <img
+              class="hero__image"
+              src="./assets/hero-img.png"
+              alt="판다마켓 마스코트 캐릭터"
+            />
           </div>
-          <img class="hero-image" src="./assets/hero-img.png" alt="판다마켓 마스코트 캐릭터" />
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="feature">
-      <div class="container feature-inner">
-        <img src="./assets/hot-item-img.png" alt="" aria-hidden="true"/>
-        <div class="feature-text">
-          <strong class="text-2lg-bold feature-badge">
-            Hot item
-          </strong>
-          <h3 class="section-title feature-title">
-            인기 상품을<br>
-            확인해 보세요
-          </h3>
-          <p class="text-2xl-medium feature-description">
-            가장 HOT한 중고거래 물품을<br>
-            판다 마켓에서 확인해 보세요
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="feature">
-      <div class="container feature-inner feature--reverse">
-        <img src="./assets/search-img.png" alt="" aria-hidden="true"/>
-        <div class="feature-text">
-          <strong class="text-2lg-bold feature-badge">
-            Search
-          </strong>
-          <h3 class="section-title feature-title">
-            구매를 원하는<br>
-            상품을 검색하세요
-          </h3>
-          <p class="text-2xl-medium feature-description">
-            구매하고 싶은 물품은 검색해서<br>
-            쉽게 찾아보세요
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="feature">
-      <div class="container feature-inner">
-        <img src="./assets/register-img.png" alt="" aria-hidden="true"/>
-        <div class="feature-text">
-          <strong class="text-2lg-bold feature-badge">
-            Register
-          </strong>
-          <h3 class="section-title feature-title">
-            판매를 원하는<br>
-            상품을 등록하세요
-          </h3>
-          <p class="text-2xl-medium feature-description">
-            어떤 물건이든 판매하고 싶은 상품을<br>
-            쉽게 등록하세요
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section class="hero">
-      <div class="container hero-wrapper">
-        <div class="hero-inner">
-          
-          <div class="hero-content">
-            <h2 class="section-title">
-              믿을 수 있는<br>
-              판다마켓 중고 거래
-            </h2>
+      <section class="feature">
+        <div class="container feature__inner">
+          <img src="./assets/hot-item-img.png" alt="" aria-hidden="true" />
+          <div class="feature__content">
+            <strong class="text-2lg-bold feature__badge"> Hot item </strong>
+            <h3 class="section-title feature__title">
+              인기 상품을<br />
+              확인해 보세요
+            </h3>
+            <p class="text-2xl-medium feature__description">
+              가장 HOT한 중고거래 물품을<br />
+              판다 마켓에서 확인해 보세요
+            </p>
           </div>
-          
-          <img class="hero-image" src="./assets/bottom-hero-img.png" alt="판다마켓 마스코트 캐릭터들" />
+        </div>
+      </section>
 
+      <section class="feature">
+        <div class="container feature__inner feature--reverse">
+          <img src="./assets/search-img.png" alt="" aria-hidden="true" />
+          <div class="feature__content">
+            <strong class="text-2lg-bold feature__badge"> Search </strong>
+            <h3 class="section-title feature__title">
+              구매를 원하는<br />
+              상품을 검색하세요
+            </h3>
+            <p class="text-2xl-medium feature__description">
+              구매하고 싶은 물품은 검색해서<br />
+              쉽게 찾아보세요
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature">
+        <div class="container feature__inner">
+          <img src="./assets/register-img.png" alt="" aria-hidden="true" />
+          <div class="feature__content">
+            <strong class="text-2lg-bold feature__badge"> Register </strong>
+            <h3 class="section-title feature__title">
+              판매를 원하는<br />
+              상품을 등록하세요
+            </h3>
+            <p class="text-2xl-medium feature__description">
+              어떤 물건이든 판매하고 싶은 상품을<br />
+              쉽게 등록하세요
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero">
+        <div class="container hero__wrapper">
+          <div class="hero__inner">
+            <div class="hero__content">
+              <h2 class="section-title">
+                믿을 수 있는<br />
+                판다마켓 중고 거래
+              </h2>
+            </div>
+
+            <img
+              class="hero__image"
+              src="./assets/bottom-hero-img.png"
+              alt="판다마켓 마스코트 캐릭터들"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span class="footer__copyright"> ©codeit - 2024 </span>
+        <nav class="footer__nav">
+          <ul class="footer__menu">
+            <li>
+              <a class="footer__link" href="./privacy.html">Privacy Policy</a>
+            </li>
+            <li><a class="footer__link" href="./faq.html">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="footer__socials">
+          <a
+            href="https://www.facebook.com/?locale=ko_KR"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="sr-only">페이스북</span>
+            <img src="./assets/ic-facebook.png" alt="" aria-hidden="true" />
+          </a>
+          <a
+            href="https://x.com/?lang=ko"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="sr-only">트위터</span>
+            <img src="./assets/ic-twitter.png" alt="" aria-hidden="true" />
+          </a>
+          <a
+            href="https://www.youtube.com/?hl=ko"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="sr-only">유튜브</span>
+            <img src="./assets/ic-youtube.png" alt="" aria-hidden="true" />
+          </a>
+          <a
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="sr-only">인스타그램</span>
+            <img src="./assets/ic-instagram.png" alt="" aria-hidden="true" />
+          </a>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <span class="footer-copyright">
-        ©codeit - 2024
-      </span>
-      <nav class="footer-nav">
-        <ul class="footer-menu">
-          <li><a class="footer-link" href="./privacy.html">Privacy Policy</a></li>
-          <li><a class="footer-link" href="./faq.html">FAQ</a></li>
-        </ul>
-      </nav>
-      <div class="footer-socials">
-        <a href="https://www.facebook.com/?locale=ko_KR" target="_blank" rel="noopener noreferrer">
-          <span class="sr-only">페이스북</span>
-          <img src="./assets/ic_facebook.png" alt="" aria-hidden="true"/>
-        </a>
-        <a href="https://x.com/?lang=ko" target="_blank" rel="noopener noreferrer">
-          <span class="sr-only">트위터</span>
-          <img src="./assets/ic_twitter.png" alt="" aria-hidden="true"/>
-        </a>
-        <a href="https://www.youtube.com/?hl=ko" target="_blank" rel="noopener noreferrer">
-          <span class="sr-only">유튜브</span>
-          <img src="./assets/ic_youtube.png" alt="" aria-hidden="true"/>
-        </a>
-        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-          <span class="sr-only">인스타그램</span>
-          <img src="./assets/ic_instagram.png" alt="" aria-hidden="true"/>
-        </a>
-      </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
