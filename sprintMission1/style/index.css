@@ -2,7 +2,7 @@
   width: 100%;
   max-width: 1920px; /* 피그마 기준에 맞춰 조절 */
   margin: 0 auto;
-  padding: 0 24px; /* 좌우 여백 */
+  padding: 0 200px;
 }
 
 h2 {
@@ -13,6 +13,7 @@ h2 {
   font-weight: 700;
   line-height: 140%; /* 56px */
 }
+
 /*======================================
 nav
 =======================================*/
@@ -160,9 +161,17 @@ Footer
 .footer-icon {
   display: flex;
   gap: 12px;
+  flex-shrink: 0;
+}
+
+.footer-icon a {
+  display: inline-flex;
+}
+
+.footer-icon img {
   width: 20px;
   height: 20px;
-  flex-shrink: 0;
+  display: block;
 }
 
 .footer-text {
