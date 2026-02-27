@@ -112,6 +112,7 @@ input {
   justify-content: center;
   cursor: pointer;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
 .simple-login {
@@ -171,4 +172,5 @@ input {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 0%;
+  color: #3692ff;
 }
