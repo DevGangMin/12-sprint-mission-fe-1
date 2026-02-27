@@ -34,14 +34,15 @@ body {
 }
 
 .input-label {
-  color: var(--Secondary-800, #1f2937);
+  color: var(--Cool-Gray-800, #1f2937);
 
+  height: 1.3125rem;
   /* pretendard/2lg-18px-bold */
   font-family: Pretendard;
   font-size: 1.125rem;
   font-style: normal;
   font-weight: 700;
-  line-height: 1.625rem; /* 144.444% */
+  line-height: normal; /* 144.444% */
 }
 
 .input-container {
