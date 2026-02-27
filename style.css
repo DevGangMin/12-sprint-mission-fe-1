@@ -112,6 +112,20 @@ nav {
   line-height: 26px;
 }
 
+.main_txtbox {
+  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main_txtbox > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 #item {
   display: flex;
   justify-content: center;
@@ -119,11 +133,55 @@ nav {
   padding: 188px 344px;
 }
 
-.hot_item {
+#item .hot_item,
+#register .register_sec,
+#search .search_sec {
   width: 988px;
   background-color: #fcfcfc;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 64px;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 138px 342px;
+}
+
+#search .name {
+  width: 100%;
+}
+
+#search .search_sec {
+  text-align: right;
+}
+
+#register {
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 138px 360px;
+}
+
+#bottom {
+  background-color: #cfe5ff;
+  height: 540px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+#bottom > div {
+  height: 397px;
+  gap: 69px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#bottom > div > p {
+  padding-bottom: 64px;
 }
