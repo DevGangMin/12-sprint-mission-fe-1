@@ -1,4 +1,9 @@
-/* --- 기본 레이아웃 / Typography --- */
+/* --- 기본 레이아웃 --- */
+:root {
+  --bg-hero: #cfe5ff;
+  --bg-feature: #fcfcfc;
+}
+
 .container {
   width: 100%;
   max-width: 120rem;
