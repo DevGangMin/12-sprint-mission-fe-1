@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../../reset.css" />
-    <link rel="stylesheet" href="/pages/Signup/signup.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/login.css" />
     <link
       rel="stylesheet"
       as="style"
@@ -16,7 +16,7 @@
   <body>
     <main class="main">
       <a href="/"><img class="logo" src="../../img/big-logo.png" /></a>
-      <div class="signup-form">
+      <div class="login-from">
         <section class="form">
           <div class="form-kind">
             <form class="form-container">
@@ -27,16 +27,6 @@
                 name="email"
                 class="form-input"
                 placeholder="이메일을 입력해주세요"
-              />
-            </form>
-            <form class="form-container">
-              <label for="nickname" class="form-name">닉네임</label>
-              <input
-                type="text"
-                id="nickname"
-                name="nickname"
-                class="form-input"
-                placeholder="닉네임을 입력해주세요"
               />
             </form>
             <form class="form-container">
@@ -56,27 +46,8 @@
                 />
               </div>
             </form>
-            <form class="form-container">
-              <label for="password-check" class="form-name"
-                >비밀번호 확인</label
-              >
-              <div class="form-wipper">
-                <input
-                  type="password"
-                  id="password-check"
-                  name="password-check"
-                  class="form-input"
-                  placeholder="비밀번호를 다시 입력해주세요"
-                />
-                <img
-                  src="../../img/password_icon.png"
-                  alt="비밀번호 숨김 아이콘"
-                  class="password-icon"
-                />
-              </div>
-            </form>
           </div>
-          <a class="signup-button">회원가입</a>
+          <a class="login-button">로그인</a>
         </section>
         <section class="simple-login">
           <p>간편 로그인하기</p>
@@ -102,8 +73,8 @@
           </div>
         </section>
         <section class="signup-link">
-          <p class="signup-link-font">이미 회원이신가요?</p>
-          <a class="go-signup" href="../Login/login.html">로그인</a>
+          <p class="signup-link-font">판다마켓이 처음이신가요?</p>
+          <a class="go-signup" href="../pages/signup.html">회원가입</a>
         </section>
       </div>
     </main>
