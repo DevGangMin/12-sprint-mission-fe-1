@@ -12,52 +12,52 @@
     />
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/common.css" />
-    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
   </head>
   <body>
-    <main class="login">
-      <div class="login__container">
+    <main class="auth">
+      <div class="auth__container">
         <h1>
           <a href="/">
             <img src="./assets/logo-lg.svg" alt="판다마켓" />
           </a>
         </h1>
 
-        <div class="login__wrapper">
-          <form class="login-form" action="#" method="post">
+        <div class="auth__wrapper">
+          <form class="auth-form" action="#" method="post">
             <fieldset>
               <legend class="sr-only">로그인 정보 입력</legend>
 
-              <div class="login-form__field">
-                <label for="email" class="text-lg-semibold login-form__label"
+              <div class="auth-form__field">
+                <label for="email" class="text-2lg-bold auth-form__label"
                   >이메일</label
                 >
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  class="text-lg-regular login-form__input"
+                  class="text-lg-regular auth-form__input"
                   placeholder="이메일을 입력해주세요"
                   required
                 />
               </div>
 
-              <div class="login-form__field">
-                <label for="password" class="text-lg-semibold login-form__label"
+              <div class="auth-form__field">
+                <label for="password" class="text-2lg-bold auth-form__label"
                   >비밀번호</label
                 >
-                <div class="login-form__input-wrapper">
+                <div class="auth-form__input-wrapper">
                   <input
                     type="password"
                     id="password"
                     name="password"
-                    class="text-lg-regular login-form__input"
+                    class="text-lg-regular auth-form__input"
                     placeholder="비밀번호를 입력해주세요"
                     required
                   />
-                  <button type="button" class="login-form__visibility-btn">
+                  <button type="button" class="auth-form__visibility-btn">
                     <span class="sr-only">입력한 비밀번호 보기</span>
-                    <img src="./assets/login-btn-visibility-off.svg" alt="" />
+                    <img src="./assets/ic-visibility-off.svg" alt="" />
                   </button>
                 </div>
               </div>
@@ -65,7 +65,7 @@
               <button
                 type="submit"
                 disabled
-                class="btn-base text-xl-semibold login-form__submit-btn"
+                class="btn-base text-xl-semibold auth-form__submit-btn"
               >
                 로그인
               </button>
@@ -94,9 +94,9 @@
             </div>
           </section>
 
-          <p class="text-md-medium signup-prompt">
+          <p class="text-md-medium auth-switch">
             판다마켓이 처음이신가요?
-            <a href="./signup.html" class="signup-prompt__link"> 회원가입 </a>
+            <a href="./signup.html" class="auth-switch__link">회원가입 </a>
           </p>
         </div>
       </div>
