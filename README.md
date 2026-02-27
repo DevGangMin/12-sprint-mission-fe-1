@@ -118,12 +118,12 @@ gap
 
 방문자 수 확인을 위해 **GA4 (Google Analytics 4)**를 연동하였습니다.
 
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8XC4C0YZ1""></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
+  gtag('config', 'G-Q8XC4C0YZ1"');
 </script>
 
 실시간 보고서에서 방문자 확인 가능
