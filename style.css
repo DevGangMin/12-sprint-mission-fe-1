@@ -185,3 +185,43 @@ nav {
 #bottom > div > p {
   padding-bottom: 64px;
 }
+
+footer {
+  box-sizing: border-box;
+  background-color: var(--Secondary-900);
+  height: 160px;
+  width: 100%;
+}
+
+.footer_in {
+  max-width: 100%;
+  padding: 32px 200px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.footer_in > div > ul {
+  display: flex;
+}
+
+.since {
+  color: var(--Secondary-400);
+}
+
+.helpcenter {
+  text-decoration: none;
+  color: var(--Secondary-200);
+  gap: 30px;
+}
+
+.sns {
+  gap: 12px;
+}
+
+@media (min-width: 1920px) {
+  .footer_in {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
