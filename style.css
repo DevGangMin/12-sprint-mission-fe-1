@@ -207,9 +207,6 @@ section > div > img {
   padding-bottom: 64px;
 }
 
-#bottom img {
-}
-
 footer {
   box-sizing: border-box;
   background-color: var(--Secondary-900);
