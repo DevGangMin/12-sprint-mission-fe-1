@@ -43,7 +43,7 @@
   width: 8rem;
   height: 3rem;
   border-radius: 0.5rem;
-  background: var(--Primary-100, #3692ff);
+  background: var(--Primary-100);
 
   justify-content: center;
   align-items: center;
@@ -53,7 +53,7 @@
   flex-shrink: 0;
 
   /* 로그인 글씨 설정 */
-  color: var(--Cool-Gray-100, #f3f4f6);
+  color: var(--Secondary-100);
 
   /* pretendard/lg-16px-semibold */
   font-family: Pretendard;
@@ -99,7 +99,7 @@
 }
 
 .hero-title {
-  color: var(--Secondary-700, #374151);
+  color: var(--Secondary-700);
   font-family: Pretendard;
   font-size: 2.5rem;
   font-style: normal;
@@ -120,9 +120,9 @@
 
   border: none;
   border-radius: 2.5rem;
-  background: var(--brand-blue, #3692ff);
+  background: var(--Primary-100);
 
-  color: var(--Secondary-50, #f9fafb);
+  color: var(--Secondary-50);
   text-align: center;
   /* pretendard/xl-20px-semibold */
   font-family: Pretendard;
@@ -182,7 +182,7 @@
 }
 
 .section-keyword {
-  color: var(--Primary-100, #3692ff);
+  color: var(--Primary-100);
 
   /* pretendard/2lg-18px-bold */
   font-family: Pretendard;
@@ -202,7 +202,7 @@
 }
 
 .section-para {
-  color: var(--Secondary-700, #374151);
+  color: var(--Secondary-700);
 
   /* pretendard/2xl-24px-medium */
   font-family: Pretendard;
@@ -286,7 +286,7 @@
   align-items: flex-start;
   gap: 0.625rem;
 
-  background: var(--Secondary-900, #111827);
+  background: var(--Secondary-900);
 }
 
 .pm-footer-nav {
@@ -322,11 +322,11 @@
 }
 
 .pm-footer-copyright {
-  color: var(--Secondary-400, #9ca3af);
+  color: var(--Secondary-400);
 }
 
 .pm-footer-opt {
-  color: var(--Secondary-200, #e5e7eb);
+  color: var(--Secondary-200);
   text-decoration: none;
 }
 
