@@ -172,5 +172,5 @@ input {
   font-size: 14px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #3692ff;
+  color: var(--input-form-focus);
 }
