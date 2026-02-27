@@ -9,6 +9,22 @@
 }
 
 body {
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
   font-size: 1rem;
 }
 
@@ -75,7 +91,8 @@ nav {
   gap: 7px;
 }
 
-#hero > div > img {
+#hero > div > img,
+#bottom img {
   min-width: 746px;
 }
 
@@ -84,6 +101,10 @@ nav {
   flex-direction: column;
   gap: 32px;
   padding-bottom: 60px;
+}
+
+section > div > img {
+  min-width: 588px;
 }
 
 .going {
@@ -184,6 +205,9 @@ nav {
 
 #bottom > div > p {
   padding-bottom: 64px;
+}
+
+#bottom img {
 }
 
 footer {
