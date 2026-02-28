@@ -4,12 +4,6 @@
 
 > 배포 링크: https://12-sprint-mission-yooseohyeon.netlify.app
 
-## 🛠 기술 스택
-
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="18" /> 
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="18" /> 
-<img src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" width="18" />
-
 ## 📁 프로젝트 구조
 
 ```
