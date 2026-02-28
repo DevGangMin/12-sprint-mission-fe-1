@@ -1,0 +1,29 @@
+:root {
+  --Cool-Gray-100: #f3f4f6;
+  --Secondary-900: #111827;
+  --Secondary-800: #1f2937;
+  --Secondary-700: #374161;
+  --Secondary-400: #9ca3af;
+  --Secondary-200: #e5e7eb;
+  --Primary-100: #3692ff;
+}
+
+body {
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    system-ui,
+    Roboto,
+    "Helvetica Neue",
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    "Malgun Gothic",
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    sans-serif;
+  font-size: 1rem;
+}
