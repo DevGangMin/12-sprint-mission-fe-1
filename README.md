@@ -1,6 +1,7 @@
 # 🐼 판다마켓 (PandaMarket) FE 프로젝트
 
-<img width="396" height="132" alt="pm_logo" src="https://github.com/user-attachments/assets/c7dbbf4c-1bb9-40cf-a03b-3acade3f56b6" />
+<img width="396" height="132" alt="pm_logo" src="https://github.com/user-attachments/assets/93bd1dc7-79d5-44ea-a827-80e3d1ff71ee" />
+
 
 ### 판다마켓은 중고거래를 위한 커뮤니티 플랫폼입니다.
 
@@ -17,7 +18,7 @@ https://pandamarket-fs-12-hs.netlify.app/
 
 ### 1. 메인 페이지 (`index.html`)
 
-<img width="1654" height="3470" alt="index" src="https://github.com/user-attachments/assets/9885ab28-2097-453a-bbbb-513bc19ac600" />
+<img width="1654" height="3470" alt="index" src="https://github.com/user-attachments/assets/a58c1b36-a249-4818-8ee8-b9bb6852448a" />
 
 - 판다마켓의 주요 서비스를 소개하는 히어로 섹션과 메인 섹션, 하단 배너를 포함하고 있습니다.
 - 상단 고정바에 로그인 페이지로 넘어가는 로그인 버튼이 있습니다.
@@ -25,7 +26,7 @@ https://pandamarket-fs-12-hs.netlify.app/
 
 ### 2. 로그인 페이지 (`login.html`)
 
-<img width="1669" height="911" alt="login" src="https://github.com/user-attachments/assets/4a586379-9c34-4fe8-8573-1d08add6cc1a" />
+<img width="1669" height="911" alt="login" src="https://github.com/user-attachments/assets/7c738d08-95b0-42e1-b0a7-0ddafce153d2" />
 
 - 이메일과 비밀번호를 입력하여 로그인할 수 있는 폼을 제공합니다.
 - 비밀번호 입력 필드 우측의 눈 모양 아이콘(`btn_visibility_off`)을 통해 비밀번호 표시 여부를 설정할 수 있는 UI를 구성했습니다.
@@ -33,7 +34,7 @@ https://pandamarket-fs-12-hs.netlify.app/
 
 ### 3. 회원가입 페이지 (`signup.html`)
 
-<img width="1669" height="911" alt="signup" src="https://github.com/user-attachments/assets/83660f61-a75e-42b0-98ae-86f0f8624877" />
+<img width="1669" height="911" alt="signup" src="https://github.com/user-attachments/assets/412b3b47-fbfb-4184-8eb3-87a3669f154d" />
 
 - 신규 사용자 등록을 위해 이메일, 닉네임, 비밀번호, 비밀번호 확인을 입력받습니다.
 - 로그인 페이지와 동일한 소셜 간편 로그인 기능을 제공하며, 이미 회원이신 분들을 위한 로그인 페이지 이동 링크가 포함되어 있습니다.
