@@ -1,0 +1,306 @@
+body {
+  /* padding-top: 70px; */
+}
+
+@media (min-width: 1920px) {
+  nav a {
+    margin: 0 200px;
+  }
+}
+
+nav {
+  /* 심화 과제용 상단 헤더 고정 */
+  position: sticky;
+  background-color: #fff;
+  border-bottom: 1px solid #dfdfdf;
+  width: 100%;
+  height: 70px;
+  top: 0;
+  align-items: center;
+  /* 첫 항목은 시작에 밀착, 끝은 끝에 밀착 */
+  justify-content: space-between;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  height: 160px;
+  background-color: #111827;
+  color: #fff;
+  padding: 32px 200px;
+}
+
+footer .container > div {
+  color: #9ca3af;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+footer a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+footer .link-page a:first-child {
+  margin-right: 30px;
+}
+
+footer .link-sns {
+  display: flex;
+  gap: 12px;
+  margin: 0;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+main section {
+  max-width: 100%;
+  height: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 최상단, 최하단 배너 스타일 조정 */
+main section.banner_top,
+main section.banner_bottom {
+  height: 540px;
+  align-items: flex-end;
+  background-color: #cfe5ff;
+}
+
+div.container_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fcfcfc;
+  gap: 64px;
+}
+
+.item_home {
+  width: 988px;
+}
+
+.banner_top div.container_inner {
+  height: 340px;
+  gap: 7px;
+  align-items: flex-start;
+  background-color: #cfe5ff;
+}
+
+.banner_bottom div.container_inner {
+  height: 397px;
+  gap: 69px;
+  align-items: flex-start;
+  background-color: #cfe5ff;
+}
+
+.banner_top div p:first-child {
+  margin-top: 40px;
+}
+
+.banner_top div p:last-child {
+  margin-top: 32px;
+}
+
+.banner_bottom div p {
+  margin-top: 110px;
+}
+
+div.container_inner img {
+  vertical-align: bottom;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.btn_small_40 {
+  width: 88px;
+  height: 42px;
+  border-radius: 8px;
+  background-color: #3692ff;
+  color: #f3f4f6;
+}
+
+.btn_large {
+  width: 357px;
+  height: 56px;
+  border-radius: 40px;
+  background-color: #3692ff;
+  color: #f3f4f6;
+}
+
+.btn-kakao {
+  width: 42px;
+  height: 42px;
+  background-color: #f5e14b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+/* 최상단, 최하단 배너 영역 텍스트 */
+.txt_banner {
+  color: #374151;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+}
+
+/* 중간 배너 텍스트 */
+.txt_label {
+  color: #3692ff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  margin-bottom: 12px;
+}
+
+.txt_title {
+  color: #374151;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.8px;
+  margin-bottom: 24px;
+}
+
+.txt_description {
+  color: #374151;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+/* 중간 배너는 텍스트 우측 정렬 */
+.align_right {
+  text-align: right;
+}
+
+/* 로그인 페이지 */
+main.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main.login-container > section {
+  width: 640px;
+}
+
+main.login-container .login-container-inner .column {
+  display: flex;
+  width: 640px;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  width: 100%;
+}
+
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  height: 56px;
+  padding: 16px 24px;
+  box-sizing: border-box;
+  border: 0;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+
+input[type="email"]::placeholder,
+input[type="password"]::placeholder {
+  color: #9ca3af;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+input:focus {
+  /* 브라우저 기본 값이 가려서 설정 */
+  outline: none;
+  border: 1px solid #3692ff;
+}
+
+/* 로그인 버튼 컬러 활성화 */
+button[type="submit"]:hover {
+  background-color: #3692ff;
+}
+
+.txt_login {
+  color: #1f2937;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+}
+
+main.login-container .btn_large {
+  width: 100%;
+  background-color: #9ca3af;
+}
+
+.login-sns {
+  border-radius: 8px;
+  background-color: #e6f2ff;
+  height: 74px;
+  box-sizing: border-box;
+  padding: 16px 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px 0;
+  color: #1f2937;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+
+.sns-buttons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.login-container-inner div:last-child {
+  text-align: center;
+  color: #1f2937;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.login-container-inner div:last-child a {
+  color: #3692ff;
+  text-decoration-line: underline;
+}
