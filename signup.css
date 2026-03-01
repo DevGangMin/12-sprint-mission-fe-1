@@ -134,7 +134,12 @@ input:focus {
   font-weight: 500;
   line-height: 26px;
 }
-
+/* 카카오톡 구글 이미지 갭 정렬 */
+.sns-img {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
 /* 구글이미지 사이즈 */
 .googleimg {
   width: 42px;
