@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  padding: 60px 640px 178px 640px;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-auth-bg);
+}
+
+.signup-container {
+  display: flex;
+  width: 640px;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  flex-shrink: 0;
+}
+
+.logo {
+  width: 396px;
+  height: 132px;
+}
+
+.signup-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.email-wrap,
+.nikname-wrap,
+.pw-wrap,
+.pw-check-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.email-wrap,
+.nikname-wrap,
+.pw-wrap,
+.pw-check-wrap label {
+  color: var(--color-auth-text);
+  font-family: Pretendard;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+#email,
+#nikname,
+#password,
+#password-check {
+  display: flex;
+  width: 640px;
+  height: 56px;
+  padding: 16px 24px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 12px;
+  background: var(--color-input-bg);
+  border: none;
+}
+
+#email::placeholder,
+#nikname::placeholder,
+#password::placeholder,
+#password-check::placeholder {
+  flex: 1 0 0;
+  color: var(--color-placeholder-text);
+  /* pretendard/lg-16px-regular */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+#email:focus,
+#nikname:focus,
+#password:focus,
+#password-check:focus {
+  border: 1px solid var(--color-focus-in);
+  outline: none;
+}
+
+.signup-btn {
+  display: flex;
+  padding: 16px 124px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 40px;
+  background: var(--color-btn-bg);
+  border: none;
+  cursor: pointer;
+}
+
+.signup-btn span {
+  color: var(--color-signup-btn-text);
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 120% */
+}
+
+.easy-login-box {
+  display: flex;
+  width: 640px;
+  height: 74px;
+  padding: 16px 23px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--color-bg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.easy-login-box span {
+  color: var(--color-auth-text);
+  /* pretendard/lg-16px-medium */
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px; /* 162.5% */
+}
+
+.icon {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.icon image {
+  width: 42px;
+  height: 42px;
+}
+
+.login-wrap span {
+  color: var(--color-auth-text);
+  /* pretendard/md-14px-medium */
+  font-family: Pretendard;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 171.429% */
+}
+
+.login-wrap a {
+  color: var(--color-link-i);
+  font-family: Pretendard;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: none;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+  text-underline-position: from-font;
+}
+
+.login-wrap a:visited {
+  color: var(--color-link-i);
+}

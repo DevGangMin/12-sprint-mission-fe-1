@@ -1,0 +1,44 @@
+:root {
+  /* 색상 정리 */
+  --white: #fff;
+  --gray-light: #dfdfdf;
+  --blue-primary: #3692ff;
+  --blue-light: #cfe5ff;
+  --gray-700: #374151;
+  --gray-900: #111827;
+  --gray-400: #9ca3af;
+  --gray-200: #e5e7eb;
+  --white-warm: #fcfcfc;
+  --gray-100: #f3f4f6;
+  --gray-800: #1f2937;
+  --blue-white: #e6f2ff;
+  --blue-secondary: #3182f6;
+
+  /* 색상-구역 정리 */
+  /* index.html */
+  --color-gnb-border-bottom: var(--gray-light);
+  --color-gnb-bg: var(--white);
+  --color-section-bg: var(--white);
+  --color-login-btn-bg: var(--blue-primary);
+  --color-hero-btn-bg: var(--blue-primary);
+  --color-section-head: var(--blue-primary);
+  --color-index-btn-text: var(--white);
+  --color-hero-bg: var(--blue-light);
+  --color-bottom-bg: var(--blue-light);
+  --color-index-text: var(--gray-700);
+  --color-footer-bg: var(--gray-900);
+  --color-footer-cr: var(--gray-400);
+  --color-footer-if: var(--gray-200);
+  /* login,signup html */
+  --color-auth-bg: var(--white-warm);
+  --color-auth-text: var(--gray-800);
+  --color-input-bg: var(--gray-100);
+  --color-placeholder-text: var(--gray-400);
+  --color-focus-in: var(--blue-primary);
+  --color-btn-bg: var(--gray-400);
+  --color-signup-btn-text: var(--white);
+  --color-login-btn-text: var(--gray-100);
+  --color-bg: var(--blue-white);
+  --color-link-s: var(--blue-primary);
+  --color-link-i: var(--blue-secondary);
+}
