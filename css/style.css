@@ -1,0 +1,252 @@
+/* ================GNB================ */
+
+.header {
+    max-width: 100%;
+    height: 60px;
+    background-color: #fff;
+    position: sticky; /* 스크롤 시 상단에 고정 */
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #DFDFDF;
+
+     
+}
+
+.header .container {
+    max-width: 1920px;
+    width : 100% ;
+    margin: 0 auto;
+    display: flex;     /* 내부 요소들을 가로로 나열 */
+    justify-content: space-between; /* 메인축(가로) 정렬, 자식 요소들을 양 끝으로 배치 */
+    align-items: center; /* 교차축(세로) 정렬, 자식 요소들을 세로축 중앙 정렬 */
+    height: 100%;
+    padding: 0 20px; /* 좌우 최소 여백 */
+    box-sizing: border-box; /* 패딩이 너비에 영향을 주지 않도록 설정 */
+    
+}
+
+.header .logo {
+   cursor: pointer; /* 마우스를 올리면 손가락 모양으로 변경 */
+}
+
+.btn-login {
+    background-color: #3692FF; /* 버튼 컬러 */
+    color: white; /* 폰트 컬러 */
+    border: none;
+    width : 128px;
+    height : 48px;
+    font-size: 1.2rem; /* 크롬 브라우저 기본 폰트 16px로  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    gap: 10px;
+    cursor: pointer; /* 마우스를 올리면 손가락 모양으로 변경 */
+}
+
+/* ================Hero================ */
+
+.top-hero {
+    width: 100%;
+    background-color: #CFE5FF;
+}
+    
+.top-hero .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;     /* 내부 요소들을 가로로 나열 */
+    height : 548px;
+    justify-content: center; /* 메인축(가로) 정렬, 자식 요소들을 양 끝으로 배치 */
+    align-items: flex-end; /* 캐릭터를 바닥 선에 밀착 */
+    overflow: hidden;
+}
+.hero-content h1 {
+    color: var(--Secondary-700, #374151);
+    font-family: Pretendard;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 56px */
+    GAP: 32px;
+}
+
+.hero-image {
+    display: flex;
+    width: 746px;
+    height: 340px;
+    padding-right: 0;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.btn-primary {
+    display: flex;
+    height: 56px;
+    padding: 16px 124px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-radius: 40px;
+    font-size: 20px;
+    color: white;
+    background-color: #3692FF;
+    cursor: pointer;
+    margin-bottom: 100px;
+}
+
+/* ================Section================ */
+
+.section-features {
+    width: 100%;
+    background-color: #fff;
+    flex-direction: column;
+    display: flex;     
+    justify-content: center; 
+    align-items: center;
+    overflow: hidden;
+}
+    
+.section-features .container {
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 138px; 
+    padding: 138px 0;
+}
+
+/* 섹션 영역 텍스트 설정 */
+.section-features .container span {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    color: #3692FF;
+}
+
+.feature-text h3 {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%
+ }
+
+.feature-text p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+
+/* 아티클(이미지+글) 가로 배치 */
+.feature-item {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    width: 100%;
+    gap: 64px; 
+}
+
+/* 이미지 영역과 텍스트 영역의 비율 고정 */
+.feature-img, .feature-text {
+    flex: 1;  /* 반반씩 영역 차지 */
+}
+
+.feature-img img {
+    width: 588px;
+    height: 444px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.feature-item.reverse {
+    flex-direction: row-reverse; /* 이미지와 텍스트 위치 변경 */
+}
+
+.feature-item.reverse .feature-text {
+    text-align: right
+}
+
+
+/* ================Bottom================ */
+
+.bottom-hero {
+    width: 100%;
+    background-color: #CFE5FF; 
+}
+
+.bottom-hero .container {
+    max-width: 1920px;
+    height : 540px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center; /* 메인축(가로) 정렬, 자식 요소들을 양 끝으로 배치 */
+    align-items: flex-end; /* 캐릭터를 바닥 선에 밀착 */
+}
+
+.bottom-hero h1 {
+    color: var(--Secondary-700, #374151);
+    font-family: Pretendard;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 56px */
+    margin-bottom: 172.5px;
+}
+
+
+/* ================footer================ */
+
+.footer .container {
+    max-width: 1920px;
+    width : 100% ;
+    margin: 0 auto;
+    display: flex;     /* 내부 요소들을 가로로 나열 */
+    justify-content: space-between; /* 메인축(가로) 정렬, 자식 요소들을 양 끝으로 배치 */
+    align-items: center; /* 교차축(세로) 정렬, 자식 요소들을 세로축 중앙 정렬 */
+    height: 100%;
+    padding: 0 20px; /* 좌우 최소 여백 */
+    box-sizing: border-box; /* 패딩이 너비에 영향을 주지 않도록 설정 */
+    
+}
+
+.footer {
+    background-color: #000000; 
+    padding: 32px 0;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.footer-left p {
+    color: #ffffff; 
+    font-size: 1.2rem;
+}
+
+.footer-center a {
+    color: #ffffff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.footer-right {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-right img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-right a:hover {
+    transform: translateY(-5px); /* 위로 살짝 떠오르는 효과 */
+    opacity: 0.8;                /* 살짝 투명해지며 클릭 가능한 상태임을 알림 */
+}
