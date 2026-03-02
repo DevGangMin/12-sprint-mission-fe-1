@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>판다마켓 | 로그인</title>
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/login.css" />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8XC4C0YZ1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", "G-Q8XC4C0YZ1");
+  </script>
+</head>
+
+<body>
+  <main class="auth">
+    <section class="auth-card" aria-label="로그인 폼">
+      <!-- 로고 -->
+      <a class="brand" href="/" aria-label="판다마켓 홈으로 이동">
+        <img class="brand__icon" src="images/login/panda logo.svg" alt="판다마켓 로고" />
+      
+        <span class="brand__text">판다마켓</span>
+      </a>
+
+      <!-- 폼 -->
+      <form class="form" action="#" method="post">
+        <div class="field">
+          <label class="label" for="email">이메일</label>
+          <input
+            class="input"
+            id="email"
+            name="email"
+            type="email"
+            placeholder="이메일을 입력해 주세요"
+            autocomplete="email"
+          />
+        </div>
+
+        <div class="field">
+          <label class="label" for="password">비밀번호</label>
+
+          <div class="input-wrap">
+            <input
+              class="input input--with-icon"
+              id="password"
+              name="password"
+              type="password"
+              placeholder="비밀번호를 입력해 주세요"
+              autocomplete="current-password"
+            />
+
+            <button class="icon-btn" type="button" aria-label="비밀번호 보기">
+              <img src="images/login/btn_visibility_off.svg" alt="비밀번호 보기" />
+            </button>
+          </div>
+        </div>
+
+        <button class="btn btn--primary" type="submit">로그인</button>
+      </form>
+
+      <!-- 간편 로그인 -->
+      <div class="social">
+        <p class="social__title">간편 로그인하기</p>
+        <div class="social__icons">
+          <a class="social__icon" href="https://www.google.com/" target="_blank" rel="noopener noreferrer"
+            aria-label="구글로 이동">
+            <img src="images/login/google.png" alt="Google" />
+          </a>
+
+          <a class="social__icon" href="https://www.kakaocorp.com/page/" target="_blank" rel="noopener noreferrer"
+            aria-label="카카오로 이동">
+            <img src="images/login/kakao.png" alt="Kakao" />
+          </a>
+        </div>
+      </div>
+
+      <!-- 회원가입 이동 -->
+      <p class="bottom">
+        판다마켓이 처음이신가요?
+        <a class="bottom__link" href="/signup">회원가입</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>

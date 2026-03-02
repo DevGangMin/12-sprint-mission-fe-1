@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>판다마켓 | 회원가입</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/signup.css" />
+
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q8XC4C0YZ1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "G-Q8XC4C0YZ1");
+    </script>
+  </head>
+  <body>
+    <main class="auth">
+      <section class="auth-card" aria-labelledby="signup-title">
+        <a class="brand" href="/" aria-label="판다마켓 홈으로 이동">
+          <img class="brand__logo" src="images/signup/panda logo.svg" alt="판다마켓 로고" />
+          <span class="brand__text" id="signup-title">판다마켓</span>
+        </a>
+
+        <!-- 회원가입 폼 -->
+        <form class="form" action="#" method="post">
+          <div class="field">
+            <label class="field__label" for="email">이메일</label>
+            <input
+              class="field__input"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="이메일을 입력해주세요"
+              autocomplete="email"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="nickname">닉네임</label>
+            <input
+              class="field__input"
+              type="text"
+              id="nickname"
+              name="nickname"
+              placeholder="닉네임을 입력해주세요"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="password">비밀번호</label>
+            <div class="field__control">
+              <input
+                class="field__input field__input--with-icon"
+                type="password"
+                id="password"
+                name="password"
+                placeholder="비밀번호를 입력해주세요"
+                autocomplete="new-password"
+                required
+              />
+              <button
+                class="icon-btn"
+                type="button"
+                aria-label="비밀번호 표시"
+                aria-pressed="false"
+                data-toggle="password"
+              >
+                <img src="images/signup/btn_visibility_off.svg" alt="비밀번호 보기" />
+              </button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="field__label" for="passwordConfirm">비밀번호 확인</label>
+            <div class="field__control">
+              <input
+                class="field__input field__input--with-icon"
+                type="password"
+                id="passwordConfirm"
+                name="passwordConfirm"
+                placeholder="비밀번호를 다시 한 번 입력해주세요"
+                autocomplete="new-password"
+                required
+              />
+              <button
+                class="icon-btn"
+                type="button"
+                aria-label="비밀번호 확인 표시"
+                aria-pressed="false"
+                data-toggle="passwordConfirm"
+              >
+                <img src="images/signup/btn_visibility_off.svg" alt="비밀번호 보기" />
+              </button>
+            </div>
+          </div>
+
+          <button class="btn btn--disabled" type="submit" disabled>회원가입</button>
+        </form>
+
+        <!-- 간편 로그인 -->
+        <div class="social">
+          <span class="social__text">간편 로그인하기</span>
+
+          <div class="social__icons">
+            <a
+              class="social__icon"
+              href="https://www.google.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Google로 이동"
+            >
+              <img src="images/signup/google.png" alt="Google" />
+            </a>
+
+            <a
+              class="social__icon"
+              href="https://www.kakaocorp.com/page/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Kakao로 이동"
+            >
+              <img src="images/signup/kakao.png" alt="Kakao" />
+            </a>
+          </div>
+        </div>
+
+        <p class="bottom">
+          이미 회원이신가요?
+          <a class="bottom__link" href="/login">로그인</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
