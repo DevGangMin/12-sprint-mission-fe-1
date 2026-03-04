@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9BFL6NB2DL"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-9BFL6NB2DL");
+    </script>
+  </head>
+
+  <body>
+    <main class="main">
+      <a href="/"><img class="logo" src="../../img/big-logo.png" /></a>
+      <div class="login-from">
+        <section class="form">
+          <div class="form-kind">
+            <form class="form-container">
+              <label for="email" class="form-name">이메일</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                class="form-input"
+                placeholder="이메일을 입력해주세요"
+              />
+            </form>
+            <form class="form-container">
+              <label for="password" class="form-name">비밀번호</label>
+              <div class="form-wipper">
+                <input
+                  type="password"
+                  id="password"
+                  name="password"
+                  class="form-input"
+                  placeholder="비밀번호를 입력해주세요"
+                />
+                <img
+                  src="../../img/password_icon.png"
+                  alt="비밀번호 숨김 아이콘"
+                  class="password-icon"
+                />
+              </div>
+            </form>
+          </div>
+          <a class="login-button" href="./login.html">로그인</a>
+        </section>
+        <section class="simple-login">
+          <p>간편 로그인하기</p>
+          <div class="simple-login-icons">
+            <a href="https://www.google.com/">
+              <img
+                src="../../img/google_icon.png"
+                alt="구글 아이콘"
+                class="google-logo"
+            /></a>
+            <a href="https://www.kakaocorp.com/page/">
+              <div class="kakko-logo-container">
+                <img
+                  src="../../img/kakao_background.png"
+                  alt="카카오톡 아이콘(배경)"
+                />
+                <img
+                  class="kakao-logo"
+                  src="../../img/kakao_logo.png"
+                  alt="카카오톡 아이콘"
+                /></div
+            ></a>
+          </div>
+        </section>
+        <section class="signup-link">
+          <p class="signup-link-font">판다마켓이 처음이신가요?</p>
+          <a class="go-signup" href="../pages/signup.html">회원가입</a>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
