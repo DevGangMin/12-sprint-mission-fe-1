@@ -48,3 +48,68 @@ _위 이미지는 판다마켓의 대표 이미지입니다._ 📸
 ---
 
 본 프로젝트는 [코드잇](https://www.codeit.kr)의 소유이며, 교육 목적으로만 사용됩니다. © 2025 Codeit. All rights reserved.
+
+####
+
+🐼 판다마켓 (Panda Market)
+일상의 모든 물건을 쉽고 빠르게 거래하는 중고 거래 플랫폼
+
+판다마켓은 사용자가 중고 물품을 등록하고, 인기 상품을 확인하며, 간편하게 검색할 수 있는 사용자 친화적인 중고 거래 웹 서비스입니다.
+
+🚀 프로젝트 개요
+개발 기간: 2024. 11 ~ 진행 중
+
+목표: HTML/CSS를 활용한 시맨틱한 마크업과 현대적인 UI/UX 구현
+
+주요 기능: 메인 랜딩 페이지, 로그인/회원가입 인터페이스
+
+🛠 사용 기술 (Tech Stack)
+Markup: HTML5 (Semantic Tags 활용)
+
+Styling: CSS3 (Flexbox 레이아웃, BEM 방법론 적용)
+
+Design Asset: Figma 기반의 정밀 디자인 구현
+
+Font: Pretendard, ROKAF Sans
+
+📂 프로젝트 구조
+Plaintext
+project/
+├── css/
+│ ├── reset.css # 브라우저 기본 스타일 초기화
+│ ├── index.css # 메인 페이지 공통 스타일
+│ └── login.css # 로그인 및 회원가입 전용 스타일
+├── html/
+│ ├── login.html # 로그인 페이지
+│ └── signup.html # 회원가입 페이지
+├── image/ # 프로젝트 사용 이미지 및 아이콘
+└── index.html # 메인 랜딩 페이지
+✨ 핵심 구현 포인트
+
+1. 웹 접근성 및 시맨틱 마크업
+<header>, <main>, <section>, <footer> 등 적절한 시맨틱 태그를 사용하여 구조화했습니다.
+
+label의 for와 input의 id를 명확히 연결하여 웹 접근성을 높였습니다.
+
+2. 현대적인 UI 요소
+   Sticky Header: 스크롤 시에도 네비게이션이 상단에 고정되어 편의성을 높였습니다.
+
+Interactive Inputs: focus-within 및 :focus 가상 선택자를 활용하여 사용자 입력 시 시각적 피드백을 제공합니다.
+
+Flexbox Layout: 다양한 해상도에서도 유연하게 대응할 수 있도록 Flexbox를 기반으로 배치했습니다.
+
+3. 사용자 경험 (UX)
+   target="\_blank"와 rel="noopener noreferrer"를 사용하여 안전한 외부 링크 연결을 구현했습니다.
+
+피그마 디자인을 바탕으로 text-underline-offset 등 디테일한 타이포그래피 스타일을 적용했습니다.
+
+📸 주요 화면
+메인 페이지
+상단/하단 서비스 홍보 배너
+
+Hot Item, Search, Register 섹션별 특징 소개
+
+로그인 / 회원가입
+깔끔한 폼 레이아웃과 소셜 간편 로그인 연동 UI
+
+반응형 정렬을 고려한 컨테이너 설계
