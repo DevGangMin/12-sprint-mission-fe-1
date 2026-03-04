@@ -1,0 +1,165 @@
+/* --- 기본 레이아웃 --- */
+:root {
+  --bg-hero: #cfe5ff;
+  --bg-feature: #fcfcfc;
+}
+
+.container {
+  width: 100%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.4;
+  color: var(--secondary-700);
+  word-break: keep-all;
+}
+
+/* --- Header Section --- */
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  height: 4.375rem;
+  background-color: var(--white);
+}
+
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 12.5rem;
+}
+
+.header__login-btn {
+  min-width: 8rem;
+  padding: 0.75rem 1.4375rem;
+  border-radius: 0.5rem;
+}
+
+/* --- Hero Section --- */
+.hero {
+  height: 33.75rem;
+  background-color: var(--bg-hero);
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.hero__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 69.375rem;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 3.75rem;
+  word-break: keep-all;
+}
+
+.hero__btn-lg {
+  height: 3.5rem;
+  padding: 1rem 7.75rem;
+  border-radius: 2.5rem;
+}
+
+.hero__image {
+  display: block;
+  width: 100%;
+  max-width: 46.625rem;
+  min-width: 0;
+  height: auto;
+}
+
+/* --- Feature Section --- */
+.feature {
+  padding: 8.625rem 0;
+  background-color: var(--white);
+}
+
+.feature__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  max-width: 61.75rem;
+  background-color: var(--bg-feature);
+}
+
+.feature--reverse {
+  flex-direction: row-reverse;
+}
+
+.feature--reverse .feature__content {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.feature__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.feature__badge {
+  margin-bottom: 0.75rem;
+  color: var(--primary-100);
+}
+
+.feature__title {
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.05rem;
+}
+
+.feature__description {
+  color: var(--secondary-700);
+}
+
+/* --- Footer Section --- */
+.footer {
+  height: 10rem;
+  background: var(--secondary-900);
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 12.5rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.footer__copyright {
+  color: var(--secondary-400);
+}
+
+.footer__menu {
+  display: flex;
+  gap: 1.875rem;
+}
+
+.footer__link {
+  color: var(--secondary-200);
+}
+
+.footer__socials {
+  display: flex;
+  gap: 0.75rem;
+}
